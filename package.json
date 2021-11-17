@@ -1,1 +1,19 @@
-{}
+{
+  "name": "school_journal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nastya333999/School_journal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nastya333999/School_journal/issues"
+  },
+  "homepage": "https://github.com/Nastya333999/School_journal#readme",
+  "description": ""
+}
