@@ -2,6 +2,9 @@
     margin: 0;
     /* box-sizing: border-box; */
 }
+body {
+    font-family: sans-serif;
+}  
 tr, th, td, table {
     border: 1px solid black !important;
 }
