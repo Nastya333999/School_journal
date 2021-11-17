@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+tr, th, td, table {
+    border: 1px solid black !important;
+}
+button{
+    border: none;
+    background-color: inherit;
+}
+.logo-img{
+    max-width: 80px;
+}
+.addDay {
+    border: 2px solid black;
+}

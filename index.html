@@ -12,7 +12,37 @@
 
     <header class="header">
         <div class="container">
+            <div class="header_logo">
 
+            </div>
+            <div class="navigation">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <img src="./img/12.svg" alt="">
+                    <p class="">SCHOOL A</p>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Про нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Цены</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Инструкция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <button><a class="nav-link" href="#">Логин</a></button>
+                        </li>    
+                    </ul>
+                    </div>  
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -22,32 +52,38 @@
             <div class="main_title">
                 <h2>Домашнее задание</h2>
             </div>
-            <div class="main_table">
-                <table>
-                    <tr>
-                        <td>Понедельник</td>
-                        <td>Домашнее задание</td>
-                    </tr>
-                    <tr>
-                        <td>Предмет</td>
-                        <td>Домашка</td>
-                    </tr>
-                    <tr>
-                        <td>Предмет</td>
-                        <td>Домашка</td>
-                    </tr>
-                    <tr>
-                        <td>Предмет</td>
-                        <td>Домашка</td>
-                    </tr>
-                    <tr>
-                        <td>Предмет</td>
-                        <td>Домашка</td>
-                    </tr>
+            <div class="table table-bordered">
+                <table class="table table-bordered ">
+                    <thead >
+                        <tr>
+                            <th scope="col"><button class="addDay">Добавить</button></th>
+                            <th scope="col">Предмет</th>
+                            <th scope="col q">Домашнее задание</th>
+                            <th scope="col">Комментарий</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <th scope="row"></th>
+                            <td><input type="text" class="item" placeholder="Предмет"></td>
+                            <td><input type="text" class="hw" placeholder="Домашнее задание"></td>
+                            <td><input type="text" class="comment" placeholder="Комментарий"></td>
+                        </tr>
+                        <div class="todo">
+                            <!-- <div class="row tasks">
+                                <div class="col">1</div>
+                                <div class="col"><input type="text" class="item" placeholder="Предмет"></div>
+                                <div class="col"><input type="text" class="hw" placeholder="Домашнее задание"></div>
+                                <div class="col"><input type="text" class="comment" placeholder="Комментарий"></div>
+                            </div> -->
+                        </div>
+
+                    </tbody>
                 </table>
                 
             </div>
             <!-- -->
+            <button id = "addDay">Create new day</button>
         </div>
     </section>
 
