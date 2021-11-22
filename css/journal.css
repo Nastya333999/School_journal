@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+th{
+    min-width: 36px !important;
+    height: 36px;
+    border: 1px solid black;
+} 
+.lesson{
+    min-width: 36px !important;
+    height: 36px;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+.datacont_block{
+    width: 870px;
+    height: 680px;
+    border: 1px solid black;
+    /* overflow: hidden ; */
+}
+.datacont_rating{
+    height: auto;
+    border: 1px solid black;
+    
+}
+.scrlbox{
+    overflow: hidden;
+    padding: 0px;
+    width: 641px;
+}
+.monthAndDays{
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: auto;
+}

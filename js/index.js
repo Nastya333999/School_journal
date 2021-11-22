@@ -4,34 +4,32 @@ let homework = document.querySelector('.hw');
 let comment = document.querySelector('.comment');
 let todo = document.querySelector('.todo');
 
-let allHomeWorks;
-!localStorage.allHomeWorks ? allHomeWorks = [] : allHomeWorks = JSON.parse(localStorage.getItem('tasks')) 
-
+let allHomeWorks = [];
 
 class Works {
-    constructor(item, homework, comment) {
+    constructor( item, homework, comment) {
         this.item = item;
         this.homework = homework;
         this.comment = comment;
     }
 };
 
-function createTemlete (allHomeWorks, index) {
+function createTemlete (homeWork) {
     return `
     <div class="row tasks">
-        <div class="col"></div>
-        <div class="col"><p>${item.value} </p></div>
-        <div class="col"><p>${homework.value}</p></div>
-        <div class="col"><p>${comment.value}</p></div>
+        <div class="col"><p></p></div>
+        <div class="col"><p>${homeWork.item} </p></div>
+        <div class="col"><p>${homeWork.homework}</p></div>
+        <div class="col"><p>${homeWork.comment}</p></div>
     </div>
     `
 }
 
 const fillHtmlList = () =>{
     todo.innerHTML = ""; 
-    if (allHomeWorks.length ) {
-        allHomeWorks.forEach((index,item) => {
-            todo.innerHTML += createTemlete(index,item);
+    if (allHomeWorks.length > 0 ) {
+        allHomeWorks.forEach((homeWork) => {
+            todo.innerHTML += createTemlete(homeWork);
         });
     }
 }
@@ -50,5 +48,5 @@ addWork.addEventListener('click', ()=>{
 
 if (localStorage.getItem('tasks')){
     allHomeWorks = JSON.parse(localStorage.getItem('tasks'));
-    updateLocal();
+    fillHtmlList();
 }
